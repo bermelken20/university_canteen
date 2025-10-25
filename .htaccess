@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Admin routes
+RewriteRule ^admin/(.*)$ admin_app/$1 [L,QSA]
+
+# User routes (default)
+RewriteRule ^(.*)$ user_app/$1 [L,QSA]
