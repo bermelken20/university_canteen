@@ -1,4 +1,4 @@
-FROM php:8.1-apache
-COPY . /var/www/html/
+FROM nginx:alpine
+COPY . /usr/share/nginx/html/
 EXPOSE 80
-CMD ["apache2-foreground"]
+CMD ["nginx", "-g", "daemon off;"]
