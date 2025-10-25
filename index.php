@@ -1,3 +1,1 @@
-<?php
-echo "TEST 1: Basic PHP working";
-?>
+TEST 1: HTML only - no PHP
