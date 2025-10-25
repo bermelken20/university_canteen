@@ -5,3 +5,5 @@ services:
     plan: free
     docker:
       dockerfile: Dockerfile
+    healthCheckPath: /
+    autoDeploy: true
