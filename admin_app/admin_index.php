@@ -1,3 +1,5 @@
 <?php
-echo "Admin App - WORKING!";
+echo "Admin App Test";
 ?>
+
+anong commit message nito?
