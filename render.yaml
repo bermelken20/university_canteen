@@ -3,19 +3,14 @@ services:
     name: university-canteen
     env: docker
     plan: free
-    region: oregon  # Optional: choose your preferred region
-    branch: main    # Deploy from main branch
     docker:
       dockerfile: Dockerfile
     envVars:
-      - key: APACHE_DOCUMENT_ROOT
-        value: /var/www/html
-      - key: APACHE_RUN_USER
-        value: www-data
-      - key: APACHE_RUN_GROUP
-        value: www-data
-      - key: APACHE_LOG_DIR
-        value: /var/log/apache2
-    healthCheckPath: /
-    healthCheckTimeout: 300
-    autoDeploy: true
+      - key: DB_HOST
+        value: localhost  # Change to your actual DB host
+      - key: DB_NAME
+        value: university_canteen
+      - key: DB_USER
+        value: admin
+      - key: DB_PASS
+        value: password
