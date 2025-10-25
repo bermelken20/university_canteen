@@ -5,12 +5,3 @@ services:
     plan: free
     docker:
       dockerfile: Dockerfile
-    envVars:
-      - key: DB_HOST
-        value: localhost  # Change to your actual DB host
-      - key: DB_NAME
-        value: university_canteen
-      - key: DB_USER
-        value: admin
-      - key: DB_PASS
-        value: password
