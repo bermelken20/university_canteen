@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Admin routes
+RewriteRule ^admin/(.*)$ admin_app/$1 [L]
+
+# User routes (default)
+RewriteRule ^(.*)$ user_app/$1 [L]
+
+# Redirect root to user signin
+RewriteRule ^$ /user/signin.php [L,R=301]
